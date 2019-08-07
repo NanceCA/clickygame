@@ -12,24 +12,47 @@ class App extends Component {
   state = {
     highScore: 0,
     userScore: 0,
-    clicked: false,
+    clicked: 0,
+    result: "Your guess was",
     database
   };
 
-  //add code in here of onclick
 
-  render() {
-    return (
-      <Wrapper>
-        <Title />
-        <Scores userScore={this.state.userScore} highScore={this.state.highScore}></Scores>
-        {/* map over each item in the array to generate a card component */}
-        {this.state.database.map(data =>
-          (<Card name={data.name} image={data.image} />
-          ))}
-      </Wrapper>
-    )
+  //add code in here of onclick
+  handleClick() {
+    if (this.state.clicked > 2) {
+      this.setState = {
+        userScore: 0,
+        clicked: 0,
+        result: "Whoops you clicked the same one twice!"
+      }
+    }
+    else {
+      this.setState = {
+        userScore = this.state.UserScore + 1,
+        clicked = this.state.clicked + 1,
+        result: "Yay you guess correctly!"
+
+      }
+    }
   }
+  setState = {
+
+  }
+}
+
+render() {
+  return (
+    <Wrapper>
+      <Title />
+      <Scores userScore={this.state.userScore} highScore={this.state.highScore}></Scores>
+      {/* map over each item in the array to generate a card component */}
+      {this.state.database.map(data =>
+        (<Card name={data.name} image={data.image} onChange={this.handleClick} />
+        ))}
+    </Wrapper>
+  )
+}
 }
 
 export default App;
