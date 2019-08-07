@@ -8,6 +8,7 @@ function Scores(props) {
                 YourScore: {props.userScore}
                 <hr />
                 HighScore: {props.highScore}
+                <hr />
             </div>
         </div>
     )
