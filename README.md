@@ -8,7 +8,7 @@ Users either click on a card for a first time and earn a point, for the second t
 
 The application keeps track of score and communicates relevant messaging to the user. 
 
-See the quick illustration below:
+See the quick illustration below. The deployed version can be found [here](https://floating-taiga-37159.herokuapp.com/) 
 
 ![App snapshot](./screenshot.PNG)
 
