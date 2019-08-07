@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
 
-function Card(props) {
+const Card = props => {
     return (
-        <div className="card">
+        <div className="card" onClick={() => props.manageClick(props.id)}>
             <div className="cardContainer">
                 <img alt={props.name} src={props.image} />
             </div>
