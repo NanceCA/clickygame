@@ -1,3 +1,17 @@
+## About this Project - The Clicky Game
+
+This project uses react to display image cards to the DOM. There is a database.json file that feeds the image src of each card. 
+
+The Card component, which is dynamically rendered via the map method, has a manageClick prop which helps track the state of the user click. 
+
+Users either click on a card for a first time and earn a point, for the second time and reset their score to zero or finish the game after having clicked on all of the cards without double clicking. 
+
+The application keeps track of score and communicates relevant messaging to the user. 
+
+See the quick illustration below:
+
+![App snapshot](./screenshot.PNG)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
