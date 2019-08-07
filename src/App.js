@@ -21,7 +21,6 @@ class App extends Component {
     database
   };
 
-
   //add code in here of onclick
   manageClick = id => {
 
@@ -40,12 +39,14 @@ class App extends Component {
 
       console.log("In conditional where user has double selected");
 
-      this.setState = {
-        database,
-        userScore,
-        result
-      };
-
+      // this.setState = {
+      //   database,
+      //   userScore,
+      //   result
+      // };
+      this.setState({ database });
+      this.setState({ userScore });
+      this.setState({ result })
       //if the user does not double select
     }
     else if (userScore < database.length) {
@@ -65,13 +66,17 @@ class App extends Component {
       //randomly sort the array
       database.sort(function (a, b) { return 0.5 - Math.random() });
 
-      this.setState = {
-        database,
-        userScore,
-        highScore,
-        result
+      // this.setState = {
+      //   database,
+      //   userScore,
+      //   highScore,
+      //   result
 
-      }
+      // }
+      this.setState({ database });
+      this.setState({ userScore });
+      this.setState({ highScore });
+      this.setState({ result })
     }
     else {
       alreadyClicked[0].userClicked = true;
@@ -84,12 +89,12 @@ class App extends Component {
       //randomly sort the array
       database.sort(function (a, b) { return 0.5 - Math.random() });
 
-      this.setState = {
-        database,
-        userScore: 0,
-        highScore: 12,
-        result: "Wow, you beat the game! Let's play again"
-      };
+      this.setState({ database });
+      this.setState({ userScore: 0 });
+      this.setState({ highScore: 12 });
+      this.setState({ result: "Wow, you beat the game! Let's play again" })
+
+
     }
   };
 
@@ -100,11 +105,7 @@ class App extends Component {
         <h4 className="introMessage">
           {this.state.result}
         </h4>
-        <h3>The high score is: {this.state.highScore}</h3>
-        <h3>Your score is: {this.state.userScore}</h3>
-
         <Scores userScore={this.state.userScore} highScore={this.state.highScore}></Scores>
-
         {/* map over each item in the array to generate a card component */}
         {this.state.database.map(data =>
           (<Card key={data.id} id={data.id} name={data.name} image={data.image} manageClick={this.manageClick} />
