@@ -64,14 +64,6 @@
         "userClicked": false
     },
     {
-        "id": 9,
-        "name": "Tommy Pickles",
-        "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
-        "occupation": "Adventurer",
-        "location": "California",
-        "userClicked": false
-    },
-    {
         "id": 10,
         "name": "Rocko",
         "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
@@ -85,14 +77,6 @@
         "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
         "occupation": "Superhero",
         "location": "Earth",
-        "userClicked": false
-    },
-    {
-        "id": 12,
-        "name": "Ickis",
-        "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
-        "occupation": "Ahhhh! A Real Monster!",
-        "location": "Under a City Dump",
         "userClicked": false
     }
 ]

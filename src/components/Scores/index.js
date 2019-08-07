@@ -2,12 +2,15 @@ import React from "react";
 import "./style.css";
 
 function Scores(props) {
-    return <div className="scores">
-        <p>YourScore: {props.userScore}</p>
-        <hr />
-        <p>HighScore: {props.highScore}</p>
-        <hr>{props.result}</hr>
-    </div>;
+    return (
+        <div className="container">
+            <div className="scores">
+                YourScore: {props.userScore}
+                <hr />
+                HighScore: {props.highScore}
+            </div>
+        </div>
+    )
 }
 
 export default Scores;

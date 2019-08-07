@@ -107,9 +107,11 @@ class App extends Component {
         </h4>
         <Scores userScore={this.state.userScore} highScore={this.state.highScore}></Scores>
         {/* map over each item in the array to generate a card component */}
-        {this.state.database.map(data =>
-          (<Card key={data.id} id={data.id} name={data.name} image={data.image} manageClick={this.manageClick} />
-          ))}
+        <div className="cardHolder">
+          {this.state.database.map(data =>
+            (<Card key={data.id} id={data.id} name={data.name} image={data.image} manageClick={this.manageClick} />
+            ))}
+        </div>
       </Wrapper>
     )
   }

@@ -1,3 +1,10 @@
+.cardHolder{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center
+}
+
 .App {
   text-align: center;
 }

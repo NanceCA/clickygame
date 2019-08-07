@@ -5,7 +5,7 @@
     width: 200px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row-wrap;
   }
 
 .card > .cardContainer {
@@ -13,6 +13,7 @@
     overflow: hidden;
     text-align: center;
     background:#6CADDC;
+
   }
   
   .card > .cardContainer > img {
